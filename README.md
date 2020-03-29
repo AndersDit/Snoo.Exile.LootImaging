@@ -1,0 +1,1 @@
+# Snoo.Exile.LootImaging
