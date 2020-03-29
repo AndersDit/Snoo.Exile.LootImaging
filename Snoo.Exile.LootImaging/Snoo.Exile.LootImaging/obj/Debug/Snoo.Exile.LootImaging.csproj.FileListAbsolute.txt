@@ -1,0 +1,7 @@
+C:\Development\git\Snoo.Exile.LootImaging\Snoo.Exile.LootImaging\Snoo.Exile.LootImaging\bin\Debug\Snoo.Exile.LootImaging.exe.config
+C:\Development\git\Snoo.Exile.LootImaging\Snoo.Exile.LootImaging\Snoo.Exile.LootImaging\bin\Debug\Snoo.Exile.LootImaging.exe
+C:\Development\git\Snoo.Exile.LootImaging\Snoo.Exile.LootImaging\Snoo.Exile.LootImaging\bin\Debug\Snoo.Exile.LootImaging.pdb
+C:\Development\git\Snoo.Exile.LootImaging\Snoo.Exile.LootImaging\Snoo.Exile.LootImaging\obj\Debug\Snoo.Exile.LootImaging.csprojAssemblyReference.cache
+C:\Development\git\Snoo.Exile.LootImaging\Snoo.Exile.LootImaging\Snoo.Exile.LootImaging\obj\Debug\Snoo.Exile.LootImaging.csproj.CoreCompileInputs.cache
+C:\Development\git\Snoo.Exile.LootImaging\Snoo.Exile.LootImaging\Snoo.Exile.LootImaging\obj\Debug\Snoo.Exile.LootImaging.exe
+C:\Development\git\Snoo.Exile.LootImaging\Snoo.Exile.LootImaging\Snoo.Exile.LootImaging\obj\Debug\Snoo.Exile.LootImaging.pdb

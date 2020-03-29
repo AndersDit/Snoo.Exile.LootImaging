@@ -12,50 +12,85 @@ namespace Snoo.Exile.LootImaging
     {
         static void Main(string[] args)
         {
-            string filePath = @"C:\Users\Anders Ditlevsen\Desktop\LootImages";
+            if(args != null && args.Length > 0)
+            {
+                if(args[0].ToString().ToLower() == "help")
+                {
+                    Log("<directory path> | Please provide filepath to the directory in which loot images to combine is found.");
+                    Log("Supported format: .jpeg, .jpg, .png");
+                }
+                else
+                {
+                    string filePath = args[0];
+
+                    if (!string.IsNullOrWhiteSpace(filePath))
+                    {
+                        bool directoryExists = Directory.Exists(filePath);
+
+                        if (directoryExists)
+                        {
+                            CombineLootImages(filePath);
+                        }
+                        else
+                        {
+                            Log("Directory not found.");
+                        }
+                    }
+                    else
+                    {
+                        Log("Arguments missing");
+                    }
+                }
+            }
+            else
+            {
+                Log("Arguments missing");
+            }
+        }
+
+        public static void CombineLootImages(string filePath)
+        {
 
             // Get Directory
             DirectoryInfo directory = GetDirectory(filePath);
 
             // Get all images, jpg, jpeg, png
-            List<FileInfo> imageFiles = GetImageFiles(directory, SearchOption.TopDirectoryOnly, new string[] { "jpg", "jpeg", "png" });
-
+            List<FileInfo> imageFiles = GetImageFiles(directory, SearchOption.TopDirectoryOnly, new string[] { ".jpg", ".jpeg", ".png" });
 
             // Load as Images
             List<Image> images = GetImages(imageFiles);
 
-            // Calculate new image size
-            int xx = 0; // new max length of loot image
-            int yy = 0; // new max height of loot image
-
-            foreach(Image image in images)
-            {
-                xx += image.Width;
-
-                if(yy <= image.Height)
-                {
-                    yy = image.Height;
-                }
-            }
-
-            int xxx = images.Sum(x => x.Width);
-            int yyy = images.OrderByDescending(x => x.Height).FirstOrDefault().Height;
-
             // Put images together
+            Bitmap finalLootImage = DrawImages(images);
+
+            // Save image to disk
+            SaveImages(finalLootImage, $"{filePath}\\FinalLootImage.jpg");
+        }
+
+        public static Bitmap DrawImages(List<Image> images)
+        {
+            int xx = images.Sum(x => x.Width); // new max length of loot image
+            int yy = images.OrderByDescending(x => x.Height).FirstOrDefault().Height; // new max height of loot image
+
             Bitmap finalLootImage = new Bitmap(xx, yy);
             Graphics g = Graphics.FromImage(finalLootImage);
             g.Clear(SystemColors.AppWorkspace);
 
             int totalWidth = 0;
-            
-            foreach(Image image in images)
+
+            foreach (Image image in images)
             {
-                totalWidth += image.Width;
                 g.DrawImage(image, new Point(totalWidth, 0));
+                totalWidth += image.Width;
             }
 
+            return finalLootImage;
+        }
+
+        public static void SaveImages(Bitmap finalLootImage, string finalFilePath)
+        {
             // Save image to disk
-            finalLootImage.Save($"{filePath}\\FinalLootImage.jpg", System.Drawing.Imaging.ImageFormat.Jpeg);
+            finalLootImage.Save(finalFilePath, System.Drawing.Imaging.ImageFormat.Jpeg);
             finalLootImage.Dispose();
         }
 
@@ -108,7 +143,7 @@ namespace Snoo.Exile.LootImaging
 
             try
             {
-                di = GetDirectory(filePath);
+                di = new DirectoryInfo(filePath);
             }
             catch (Exception ex)
             {
