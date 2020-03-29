@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Snoo.Exile.LootImaging.exe" version="1.0.0.1" publicKeyToken="86b31a1bc657a727" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Snoo.Exile.LootImaging" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Snoo.Exile.LootImaging.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Snoo.Exile.LootImaging.exe" size="9248">
+      <assemblyIdentity name="Snoo.Exile.LootImaging" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>mD2zOKeySlypOjv1Y1U3mD8n1pB7BETx2ozhc9U3Y+M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Snoo.Exile.LootImaging.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-VL852SF\Anders Ditlevsen" issuerKeyHash="6f244ef5fb50b336bc6d3eacc362723708efa307" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>RDHJxFlPzfz2+rnxzHWmuzAu2hXxSiqJUp0J1dqKhrw=</DigestValue></Reference></SignedInfo><SignatureValue>QHniZF9s1CPP1igz/6s6/3kVCYYGh+m7W26SrMXkRRbJebm2WYmPK4+Gt249Uk9pAiZtaFoMRVR5H+Pr8EA+ANKS1+O/e8k4lUF/nRCZ3oxUDatRvWS4xuk2Z3zWiz6+vTduEVQaJXnC+BAq6SEQzDM4ftQ2998yv7WBY3G/rbE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>rSHu1HhSRXB1QFt5kIaNzp6s/vrgNciB7cYh0QTRRSZZZ5kepkvdrrp5R3X6gAtalGFqgRpa+MyUIfTyYHyRlGBeLYLzLzXaSIP6tPs2uCVA/gJ8lZIDA/Xkl9cugd560doNgkA9DCgjRTYa6FQk2F0xoXQkjRWVA8OM4XVXFuE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="bc868adad5099d52892a4af115da2e30bba675ccf1b9faf6fccd4f59c4c93144" Description="" Url=""><as:assemblyIdentity name="Snoo.Exile.LootImaging.exe" version="1.0.0.1" publicKeyToken="86b31a1bc657a727" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-VL852SF\Anders Ditlevsen</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>HOeSmkuhpPeWPd4EDVaWrVmUErcgPCKJSjHIR5SIIHc=</DigestValue></Reference></SignedInfo><SignatureValue>c8SzZ0eZG3v4tT6TF9PRvq80DrQOHQYGzY5mAXvITePcTQtREhgSb8OKG8c+IjyxG4mL5P7j0bG73C2+smlzb2qk3zl2TKxoOmjddzW2v0hsuY7149vQ1vNsCzZAXN3y7nQChstSYbq3Lks2cKenMhW0/Su6jpyTHB4Qtp9aLjc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>rSHu1HhSRXB1QFt5kIaNzp6s/vrgNciB7cYh0QTRRSZZZ5kepkvdrrp5R3X6gAtalGFqgRpa+MyUIfTyYHyRlGBeLYLzLzXaSIP6tPs2uCVA/gJ8lZIDA/Xkl9cugd560doNgkA9DCgjRTYa6FQk2F0xoXQkjRWVA8OM4XVXFuE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICGTCCAYKgAwIBAgIQWlHWW3XUqKRBixywcHZ3ijANBgkqhkiG9w0BAQsFADBLMUkwRwYDVQQDHkAARABFAFMASwBUAE8AUAAtAFYATAA4ADUAMgBTAEYAXABBAG4AZABlAHIAcwAgAEQAaQB0AGwAZQB2AHMAZQBuMB4XDTIwMDMyOTEwMjk1M1oXDTIxMDMyOTE2Mjk1M1owSzFJMEcGA1UEAx5AAEQARQBTAEsAVABPAFAALQBWAEwAOAA1ADIAUwBGAFwAQQBuAGQAZQByAHMAIABEAGkAdABsAGUAdgBzAGUAbjCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEArSHu1HhSRXB1QFt5kIaNzp6s/vrgNciB7cYh0QTRRSZZZ5kepkvdrrp5R3X6gAtalGFqgRpa+MyUIfTyYHyRlGBeLYLzLzXaSIP6tPs2uCVA/gJ8lZIDA/Xkl9cugd560doNgkA9DCgjRTYa6FQk2F0xoXQkjRWVA8OM4XVXFuECAwEAATANBgkqhkiG9w0BAQsFAAOBgQA64anC2g+0faorD/3Pt3kxZ75c0G+MROYFvkrYAsaqFYNIL2chdV2dTE2dCnu3VU/Wzd7pgRjanbg1fRt0mtuJ5iNNfSiT5nbeJTukRut8NRuEGGV8p+sbnpi750AuXdj/UUQXfbDTqO5jv+ZIpjvwP/nn4ElUmOBiIewLvdjltQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
